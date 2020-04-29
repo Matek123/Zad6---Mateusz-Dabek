@@ -1,0 +1,12 @@
+nr_warstwy	materiał	wsp_załamania_[-] 	wsp_absorpcji_[1/cm] 	grubość_[nm]
+1 		GaAs 		3.450 			5.0 			200.0
+2 		Al(0.90)GaAs 	2.972 			2.0 			109.4
+3 		Al(0.10)GaAs 	3.401 			4.5 			95.6
+4 		Al(0.90)GaAs 	2.972 			2.0 			109.4
+5 		Al(0.10)GaAs 	3.401 			4.5 			95.6
+6		Al(0.90)GaAs 	2.972 			2.0 			109.4
+7 		Al(0.10)GaAs 	3.401 			4.5 			95.6
+8 		Al(0.90)GaAs 	2.972 			2.0 			109.4
+9 		Al(0.10)GaAs 	3.401 			4.5 			95.6
+10 		Al(0.90)GaAs 	2.972 			2.0 			109.4
+11 		GaAs 		3.450 			5.0 			200.0

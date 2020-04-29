@@ -421,7 +421,7 @@ namespace Zad6 {
 			line = line->Replace("\n", "\t");
 			line = line->Replace("\t\t\t", "\t");
 			line = line->Replace("\t\t", "\t");
-			int wiersz = line->Split(sep)->Length/5;
+			int wiersz = line->Split(sep)->Length/kol;
 			array<System::String^>^ dane = gcnew array<System::String^>(kol*wiersz);
 			dane = line->Split(sep);
 			for (int i = 0; i < kol; i++)
@@ -471,14 +471,20 @@ namespace Zad6 {
 
 			for (int j = 0; j < Tabela->ColumnCount; j++)
 			{
-				sw->Write("{0,-20}", Tabela->Columns[j]->HeaderText);
+				if (j == Tabela->ColumnCount - 1)
+					sw->Write(Tabela->Columns[j]->HeaderText);
+				else
+					sw->Write(Tabela->Columns[j]->HeaderText + "\t");
 			}
 			sw->WriteLine("");
 			for (int i = 0; i < Tabela->RowCount; i++)
 			{
 				for (int j = 0; j < Tabela->ColumnCount; j++)
 				{
-					sw->Write("{0,-20}", Tabela->Rows[i]->Cells[j]->Value);
+					if(j == Tabela->ColumnCount - 1)
+						sw->Write(Tabela->Rows[i]->Cells[j]->Value);
+					else
+						sw->Write(Tabela->Rows[i]->Cells[j]->Value + "\t");
 				}
 				sw->WriteLine("");
 			}
